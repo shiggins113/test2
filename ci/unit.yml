@@ -1,1 +1,10 @@
+---
+platform: linux
 
+image: docker:///datianshi/gradle
+
+inputs:
+  - name: git-repo
+
+run:
+  path: git-repo/ci/unit.sh
