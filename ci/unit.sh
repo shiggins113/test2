@@ -4,4 +4,5 @@ set -e
 
 export GRADLE_OPTS=-Dorg.gradle.native=false
 cd git-repo
-gradle test
+gradle assemble -PVersion=$version
+mv build/libs/spring-music-*.war ../build/
